@@ -1,7 +1,7 @@
 aiohttp
 tgcrypto
 pySmartDL 
-pyrogram
+pyrogram==2.0.53
 py-tgcalls
 Python-arq
 asyncio
